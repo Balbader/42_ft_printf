@@ -18,4 +18,6 @@
 # include <stddef.h>
 # include <unistd.h>
 
+int		ft_printf(const char *, ...);
+
 #endif 
