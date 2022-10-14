@@ -20,4 +20,12 @@
 
 int		ft_printf(const char *, ...);
 
+void	ft_print_char(char c);
+void	ft_print_str(char *str);
+
+void	ft_print_nb(int nb);
+void	ft_print_ptr(size_t ptr);
+void	ft_print_hexa(unsigned int nb, char x);
+void	ft_print_unsigned(unsigned int u);
+
 #endif 
