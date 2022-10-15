@@ -18,14 +18,14 @@
 # include <stddef.h>
 # include <unistd.h>
 
-int		ft_printf(const char *, ...);
+int		ft_printf(const char *str, ...);
 
 void	ft_print_char(char c, int *tot_len);
 void	ft_print_str(char *str, int *tot_len);
 
 void	ft_print_nb(int nb, int *tot_len);
 void	ft_print_ptr(size_t ptr, int *tot_len);
-void	ft_print_hexa(unsigned int nb, char x, int *tot_len);
+void	ft_print_hexa(unsigned int nb, char c, int *tot_len);
 void	ft_print_unsigned(unsigned int u, int *tot_len);
 
 #endif 
