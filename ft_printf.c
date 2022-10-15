@@ -51,7 +51,7 @@ int	ft_printf(const char *str, ...)
 		{
 			i++;
 			ft_check_sign(str[i], &arg, &tot_len, &i);
-			// i++;
+			i++;
 		}
 		else
 		{
