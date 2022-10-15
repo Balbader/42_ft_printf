@@ -20,7 +20,9 @@ ARFLAGS	=	rc
 
 RM		=	rm -rf
 
-SRCS	=
+SRCS	=	ft_printf.c \
+			ft_printf_numbers_utils.c \
+			ft_printf_char_utils.c \
 
 OBJS	=	$(SRCS:.c=.o)
 
