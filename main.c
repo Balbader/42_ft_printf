@@ -104,10 +104,15 @@ int	main(void)
 	ft_printf("%x\n", 3294967295);
 	ft_printf("%X\n", 3294967295);
 	ft_printf("\n");
+	ft_printf("%x\n", -3294967295);
+	ft_printf("%X\n", -3294967295);
 
 	printf("hexadecimal '%%x' and '%%X' with printf:\n");
 	printf("%lx\n", 3294967295);
 	printf("%lX\n", 3294967295);
+	printf("\n");
+	printf("%lx\n", -3294967295);
+	printf("%lX\n", -3294967295);
 
 	printf("\n");
 	printf("========== PERCENT SIGN ===========\n");
