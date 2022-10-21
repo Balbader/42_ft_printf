@@ -13,8 +13,8 @@ projects.
 Description Write a library that contains ft_printf(), a
 function that will mimic the original printf()
 You have to recode the printf() function from libc.
-The prototype of ft_printf() is:
-int ft_printf(const char *, ...);
+The prototype of ft_printf() is:<br>
+int ft_printf(const char *, ...);<br>
 Here are the requirements:
 - Don’t implement the buffer management of the original printf().
 - Your function has to handle the following conversions: cspdiuxX%
