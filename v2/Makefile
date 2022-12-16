@@ -6,11 +6,12 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/16 10:16:40 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/16 11:42:56 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			=	libftprintf.a
+NAME			=	main
+LIB_NAME		=	libftprintf.a
 
 INC_DIR			=	./includes/
 INC_FILE		=	ft_printf.h
@@ -30,7 +31,8 @@ NB				=	$(addprefix $(NB_DIR), $(NB_FILES))
 SRCS_DIR		=	./srcs/
 SRCS_FILES		=	$(CHAR) \
 					$(NB) \
-					ft_printf.c
+					ft_printf.c \
+					main.c
 
 SRCS			=	$(addprefix $(SRCS_DIR), $(SRCS_FILES))
 
@@ -47,10 +49,10 @@ RM				=	rm -rf
 
 OBJS			=	$(SRCS:.c=.o)
 
-all:				$(NAME)
+all:				$(NAME) $(LIB_NAME)
 
 $(NAME):			$(OBJS)
-						$(AR) $(ARFLAGS) $(NAME) $(OBJS)
+						$(AR) $(ARFLAGS) $(LIB_NAME) $(OBJS)
 
 %.o:				%.c
 						$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@
