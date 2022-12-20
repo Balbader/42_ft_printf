@@ -6,12 +6,11 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/19 08:38:51 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/19 11:36:54 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	libftprintf.a
-TEST_NAME		=	main
 
 INC_DIR			=	./includes/
 INC_FILE		=	ft_printf.h
@@ -36,7 +35,7 @@ SRCS_FILES		=	$(CHAR) \
 SRCS			=	$(addprefix $(SRCS_DIR), $(SRCS_FILES))
 
 CC				=	cc
-# CFLAGS			=	-Wall -Wextra -Werror
+CFLAGS			=	-Wall -Wextra -Werror
 IFLAGS			=	-I$(INC_DIR)
 
 AR				=	ar
